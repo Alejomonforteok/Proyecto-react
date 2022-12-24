@@ -1,9 +1,32 @@
 
-import React from "react";
-import Card from "../Card/Card";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = () => {
+  const { id } = useParams();
+  return <ItemList id={id} />;
+};
 
+export default ItemListContainer;
+    
+    
+    /*         <div className="d-flex justify-content-around bd-highlight mb-2 row row-cols-3">
+            {cards.map(({ titulo, descripcion, img, id, cantidad, category, precio, marca }, index) => (
+              <Card
+                key={index}
+                titulo={titulo}
+                descripcion={descripcion}
+                img={img}
+                id={id}
+                cantidad={cantidad}
+                category={category}
+                precio={precio}
+                marca={marca}
+              />))
+            }
+          </div> */
+    /* 
     const cards = [
         {
             id: 1 ,
@@ -137,24 +160,4 @@ const ItemListContainer = () => {
             cantidad: 1
         },
     ]
-
-    return (
-        <div className="d-flex justify-content-around bd-highlight mb-2 row row-cols-3">
-        {cards.map(({ titulo, descripcion, img, id, cantidad, category, precio, marca }, index) => (
-          <Card
-            key={index}
-            titulo={titulo}
-            descripcion={descripcion}
-            img={img}
-            id={id}
-            cantidad={cantidad}
-            category={category}
-            precio={precio}
-            marca={marca}
-          />))
-        }
-      </div>
-    );
-};
-
-export default ItemListContainer;
+ */

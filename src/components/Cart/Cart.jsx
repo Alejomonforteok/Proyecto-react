@@ -7,8 +7,8 @@ const Cart = () => {
       <a href="...">
         <i className="bi bi-cart-fill position-relative"></i>
       </a>
-      <span className=" cart-counter position-absolute bg-white text-center translate-middle h5 ">
-        0
+      <span className='top-0 start-100 translate-middle badge rounded-pill bg-danger'>
+        2<span className='visually-hidden'></span>
       </span>
     </div>
   );
