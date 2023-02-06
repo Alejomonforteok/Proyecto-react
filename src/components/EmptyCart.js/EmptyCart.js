@@ -10,7 +10,7 @@ const EmptyCart = () => {
     }, 2000);
   }, []);
 
-  return <p>El carrito está vacío 🫤. Está siendo redirigido al inicio...</p>;
+  return <p>El carrito está vacío . volviendo al inicio...</p>;
 };
 
 export default EmptyCart;

@@ -1,11 +1,20 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Staatliches', cursive;
   }
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(
+      https://media3.giphy.com/media/G8NKqvsjsHyhJpFGLn/giphy.gif?cid=ecf05e47hy9r1ths9mtz2rvjve7u2pwvmi26010cnglgqrgf&rid=giphy.gif&ct=g      ) center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

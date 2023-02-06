@@ -6,7 +6,7 @@ const NavBar = () => {
   const setLinkColor = ({ isActive }) => (isActive ? { color: 'black' } : { color: '#0000008c' });
 
   return (
-    <nav className='navbar navbar-expand-lg bg-light p-3 mb-5'>
+    <nav className='navbar navbar-expand-lg bg-transparent p-3 mb-5'>
       <div className='container'>
         <button
           className='navbar-toggler'
@@ -20,7 +20,7 @@ const NavBar = () => {
           <span className='navbar-toggler-icon'></span>
         </button>
         <a className='navbar-brand' href='/'>
-          Zapas Store
+          SNKRS Store
         </a>
         <div className='collapse navbar-collapse' id='navbarTogglerDemo03'>
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
@@ -30,12 +30,12 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className='nav-item'>
-              <NavLink style={setLinkColor} className='nav-link' to={"/category/men's clothing"}>
+              <NavLink style={setLinkColor} className='nav-link' to={"/category/hombre"}>
                 Calzado para hombres
               </NavLink>
             </li>
             <li className='nav-item'>
-              <NavLink style={setLinkColor} className='nav-link' to={"/category/women's clothing"}>
+              <NavLink style={setLinkColor} className='nav-link' to={"/category/mujer"}>
                 Calzado para mujeres
               </NavLink>
             </li>

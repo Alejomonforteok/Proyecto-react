@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import useFirebase from '../../hook/useFirebase';
+import useFirebase from '../../hook/UseFirebase';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import './styles.css';
 

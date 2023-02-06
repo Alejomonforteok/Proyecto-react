@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import useFirebase from '../../hook/useFirebase';
+import useFirebase from '../../hook/UseFirebase';
 import Item from '../Item/Item';
 import './styles.css';
 
@@ -12,7 +12,7 @@ const ItemList = (props) => {
   }, [id]);
 
   const renderItems = !id ? products : filteredProducts;
-  const items = renderItems.map(({ id, title, description, price, imageid, stock }) => {
+  const items = renderItems.map(({ id, title, description, price, image, stock }) => {
     return (
       <Item
         key={id}
@@ -20,7 +20,7 @@ const ItemList = (props) => {
         title={title}
         description={description}
         price={price}
-        pictureUrl={imageid}
+        image={image}
         stock={stock}
       />
     );

@@ -5,7 +5,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import './styles.css';
 
 const ItemDetail = ({ product }) => {
-  const { title, description, price, imageid, stock } = product;
+  const { title, description, price, image, stock } = product;
   const { addItem, selectedItems, updateQuantity } = useContext(CartContext);
   let location = useLocation();
 
@@ -17,7 +17,7 @@ const ItemDetail = ({ product }) => {
     <div className='details__container'>
       <div className='details__wrapper'>
         <div className='product__picture col-4'>
-          <img src={imageid} alt='product_picture' width={250} height={'auto'} />
+          <img src={image} alt='product_picture' width={400} height={'auto'} />
         </div>
         <div className='product__info col-4'>
           <div className='card'>
